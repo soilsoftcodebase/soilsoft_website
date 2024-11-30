@@ -2,13 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { close, logo, menu } from '../assets'; // Make sure these imports are correct
 import { navLinks } from '../constants';
 import ManualImage from '../components/Manaul.png';
-<<<<<<< HEAD
 import Autooo from '../components/Autooo.png';
 import Performance from '../components/Performance.png';
 import Security from '../components/Security.png'; // Example import for images
-=======
 import AutoImage from '../components/Auto.png'; // Example import for images
->>>>>>> 308accb729e2c9f4f558c713f245796429dc2daf
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -27,7 +24,7 @@ const Navbar = () => {
     },
     {
       title: 'Autooo',
-<<<<<<< HEAD
+
       image: Autooo, // added image import
       titles: 'Automate Testing',
       description: 'Efficient and reliable automated testing processes.',
@@ -45,13 +42,12 @@ const Navbar = () => {
       description:
         'Comprehensive testing to identify security vulnerabilities.',
     },
-=======
+
       image: AutoImage, // added image import
       titles: 'Automate Testing',
       description: 'Efficient and reliable automated testing processes.',
     },
->>>>>>> 308accb729e2c9f4f558c713f245796429dc2daf
-    // Add other services similarly
+
   ];
 
   useEffect(() => {
@@ -115,11 +111,8 @@ const Navbar = () => {
       <img
         src="/src/components/Logoweb.png"
         alt="SoilSoft Technologies"
-<<<<<<< HEAD
         className="w-[234px] h-[104px]"
-=======
         className="w-[184px] h-[max]"
->>>>>>> 308accb729e2c9f4f558c713f245796429dc2daf
       />
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, i) => (
