@@ -38,7 +38,7 @@ const Hero = () => {
         className={`flex-1 flex justify-center items-center md:my-0 my-10 relative `}
       >
         {/* Responsive Video Wrapper */}
-        <div className="relative w-full max-w-[600px] aspect-video rounded-lg overflow-hidden mb-10 mr-24">
+        <div className="relative w-full max-w-[600px] aspect-video rounded-lg overflow-hidden mb-0 mx-4  sm:mx-24 sm:mb-10">
           <iframe
             src="https://www.youtube.com/embed/3W4nuM_WwSU?autoplay=1&mute=1&loop=1&playlist=3W4nuM_WwSU"
             title="Popup Video"

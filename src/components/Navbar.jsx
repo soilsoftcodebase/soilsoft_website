@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { close, logo, menu } from '../assets';
+import { close, logo, menu } from '../assets'; // Make sure these imports are correct
 import { navLinks } from '../constants';
+import ManualImage from '../components/Manaul.png';
+import Autooo from '../components/Autooo.png';
+import Performance from '../components/Performance.png';
+import Security from '../components/Security.png'; // Example import for images
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
-
-  // State to manage form input values
   const [email, setEmail] = useState('');
   const [contact, setContact] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -15,28 +17,32 @@ const Navbar = () => {
   const services = [
     {
       title: 'Manaul',
+      image: ManualImage, // added image import
       titles: 'Manual Testing',
       description: 'Detailed manual testing to ensure bug-free applications.',
     },
     {
       title: 'Autooo',
+      image: Autooo, // added image import
       titles: 'Automate Testing',
       description: 'Efficient and reliable automated testing processes.',
     },
     {
       title: 'Perfomance',
+      image: Performance,
       titles: 'Performance Testing',
       description: 'Analyze and improve application performance under load.',
     },
     {
       title: 'Security Testing',
+      image: Security,
       titles: 'Security Testing',
       description:
         'Comprehensive testing to identify security vulnerabilities.',
     },
+    // Add other services similarly
   ];
 
-  // Handle ESC key to close the popup
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
@@ -50,17 +56,14 @@ const Navbar = () => {
       document.removeEventListener('keydown', handleKeyDown);
     }
 
-    // Cleanup event listener
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, [showPopup]);
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validate form data
     if (!email || !contact) {
       setErrorMessage('Please fill in all fields');
       return;
@@ -84,7 +87,6 @@ const Navbar = () => {
       );
 
       if (response.ok) {
-        // Close popup after successful form submission
         setShowPopup(false);
         alert('Request submitted successfully');
       } else {
@@ -98,11 +100,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full h-40 flex py-0 justify-between items-center navbar">
+    <nav className="w-full flex py-0 justify-between items-center navbar">
       <img
-        src="/src/assets/Slogo.png"
+        src="/src/components/Logoweb.png"
         alt="SoilSoft Technologies"
-        className="w-[230px] h-max"
+        className="w-[234px] h-[104px]"
       />
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, i) => (
@@ -110,7 +112,7 @@ const Navbar = () => {
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
               i === navLinks.length - 1 ? 'mr-0' : 'mr-10'
-            } text-black mr-10`}
+            } text-black`}
           >
             {nav.title === 'Services' ? (
               <span
@@ -143,7 +145,7 @@ const Navbar = () => {
                 key={nav.id}
                 className={`font-poppins font-normal cursor-pointer text-[16px] ${
                   i === navLinks.length - 1 ? 'mr-0' : 'mb-4'
-                } text-white mr-10`}
+                } text-white`}
               >
                 {nav.title === 'Services' ? (
                   <span
@@ -164,9 +166,15 @@ const Navbar = () => {
       {/* Popup Screen */}
       {showPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
-          <div className="relative bg-gray-600 p-6 rounded-xl max-w-full w-full max-h-full overflow-auto text-center">
+          <div className="relative bg-gray-600 p-6 rounded-xl max-w-full w-full max-h-full overflow-auto text-center m-10 ">
+            <button
+              onClick={() => setShowPopup(false)}
+              className="absolute top-4 right-4 text-red-500 text-4xl font-bold"
+            >
+              &times;
+            </button>
+
             <h2 className="text-2xl font-bold mb-6 text-white">Our Services</h2>
-            {/* Video Section */}
             <div className="relative w-full pb-[56.25%] mb-8">
               <iframe
                 src="https://www.youtube.com/embed/3W4nuM_WwSU?autoplay=1&mute=1&loop=1&playlist=3W4nuM_WwSU"
@@ -178,7 +186,6 @@ const Navbar = () => {
               ></iframe>
             </div>
 
-            {/* Services Section */}
             <div className="flex flex-col items-center px-6 py-10 bg-gray-800 text-white mb-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {services.map((service) => (
@@ -187,9 +194,9 @@ const Navbar = () => {
                     className="flex flex-col items-center bg-gray-700 p-4 rounded-lg"
                   >
                     <img
-                      src={`/src/components/${service.title}.png`} // Change path to actual service images
+                      src={service.image}
                       alt={service.titles}
-                      className="w-48 h-48 object-cover mb-4 rounded-full"
+                      className="w-48 h-48 object-cover mb-4 rounded-lg"
                     />
                     <h3 className="text-lg font-semibold mb-2">
                       {service.titles}
@@ -202,12 +209,10 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Product Section */}
             <div className="flex flex-col items-center bg-gray-800 text-white p-6 mb-8 rounded-lg">
               <h2 className="text-4xl font-bold">Contact Us</h2>
             </div>
 
-            {/* Contact Form */}
             <div className="bg-gray-900 text-white p-6 rounded-lg">
               <h2 className="text-xl font-bold mb-4">Request a Demo</h2>
               {errorMessage && (
