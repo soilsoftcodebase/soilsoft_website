@@ -1,5 +1,4 @@
-﻿# Build An Awesome Landing Page in ReactJS & TailwindCSS! 
-![alt text](https://soilsoft.ai)
+﻿# Build SoilSoft Website in React and Tailwind CSS
 
 
 1. Clone the repository.
