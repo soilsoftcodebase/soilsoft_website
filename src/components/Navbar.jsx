@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { hamburgerMenu, close} from '../assets'
 import SSlogo from '../assets/SSlogo.webp'
 import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
+
 
 const Navbar = () => {
 
