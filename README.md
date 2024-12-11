@@ -1,5 +1,4 @@
-﻿# Build An Awesome Landing Page in ReactJS & TailwindCSS! 
-![alt text](https://github.com/TECHCROWDMY/practice-landing-page/blob/main/cover.jpg?raw=true)
+﻿# Build SoilSoft Website in React and Tailwind CSS
 
 
 1. Clone the repository.
