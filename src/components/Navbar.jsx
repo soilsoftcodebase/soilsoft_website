@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { hamburgerMenu, close} from '../assets'
-import SSlogo2 from '../assets/SSlogo2.png'
+import { hamburgerMenu, close, logo} from '../assets'
+import ssLogo from '/src/assets/SSlogo2.png';
 import { HashLink as Link } from 'react-router-hash-link';
 import { HashLink } from 'react-router-hash-link';
 
@@ -15,7 +15,7 @@ const Navbar = () => {
         
         <div className='md:max-w-[1180px] max-w-[600px] m-auto w-full h-full flex justify-between items-center md:px-0 px-4'>
             
-            <img src={SSlogo2} className="h-20" />
+            <img src={ssLogo} className="h-20" />
             
             <div className='hidden md:flex items-center ml-3'>
             <nav>
