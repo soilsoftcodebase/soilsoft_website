@@ -35,15 +35,10 @@ const Navbar = () => {
     </nav>
 
             </div>
-            
-
 
             <div className='md:hidden'  onClick={handleClick}>
                     <img src={toggle?close:hamburgerMenu} />
             </div>
-
-
-
 
         </div>
         

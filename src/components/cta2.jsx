@@ -46,13 +46,13 @@ const cta2 = () => {
         <h1 className="py-3 text-2xl sm:text-3xl sm:text-center md:text-4xl font-bold sm:leading-[50px] md:leading-[60px] leading-[40px]">
           Let's Try Our <span className="text-[#038b46]">Service Now!</span>
         </h1>
-        <p className="text-sm sm:text-base md:text-lg sm:text-center text-gray-600 max-w-[800px] px-2 sm:px-4 md:px-0 ">
+        <p className="text-sm sm:text-base md:text-lg sm:text-center text-gray-600 max-w-[800px] px-2 sm:px-4 md:px-0 text-left">
           All the tools you need to harness technology, streamline operations,
           and scale your business seamlessly anytime, anywhere.
         </p>
         <button
         type="submit"
-        className="w-64 sm:w-72 px-4 sm:px-6 py-4 rounded-xl bg-[#038b46] mt-6 text-white text-sm sm:text-base md:text-lg font-bold hover:bg-[#206a45] hover:text-white transition"
+        className="w-64 sm:w-72 px-4 sm:px-6 py-4 rounded-xl bg-[#038b46] mt-6 text-white text-sm sm:text-base md:text-lg font-bold hover:bg-[#206a45] hover:text-white transition duration-300 ease-in-out"
          onClick={togglePopup}>
             Request Demo
             </button>             

@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      
+  
       <div id="hero">
         <Hero />
       </div>
@@ -27,7 +27,7 @@ const App = () => {
       </div>
 
       <div id="footer">
-        <Footer />
+        <Footer />    
       </div>
     </div>
   );
