@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Hero, Achievement, Categories, CTA, Footer, RequestDemo, RequestDemo2, Products, Services, MicrosoftForm, CTA2 } from './components';
 import './App.css';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const App = () => {
   return (
