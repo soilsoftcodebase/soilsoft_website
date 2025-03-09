@@ -5,6 +5,7 @@ import MobileOverlayForm from "./MobileOverlayForm ";
 import AiOverlayForm from "./AiOverlayForm ";
 import QAOverlayForm from "./QAOverlayForm";
 import StaffingOverlayForm from "./StaffingOverlayForm ";
+import web from "../../public/assets/web.png";
 
 const Hero = () => {
   return (
@@ -32,10 +33,7 @@ const Hero = () => {
       <div className="container mx-auto text-center items-center w-full mb-10">
         <div className="grid md:grid-cols-3 gap-10 my-6">
           <div className="bg-[#e6f5f0] p-6 mb-4 rounded-lg shadow-lg hover:shadow-2xl transition text-center">
-            <img
-              src="public/assets/web.png"
-              className="w-50 h-30 mx-auto  my-4"
-            />
+            <img src={web} />
             <h1 className="text-3xl font-semibold mb-4 p-10 my-5">
               Web Development
             </h1>
