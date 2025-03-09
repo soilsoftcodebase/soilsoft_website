@@ -65,7 +65,7 @@ const Footer = () => {
 
       {/* Footer Section */}
       <div className="md:max-w-[1180px] mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 mt-14 gap-8 px-4 md:px-0 text-gray-500 max-w-[600px]">
-        <p>© 2024 SoilSoft Technologies Pvt Ltd. All Rights Reserved.</p>
+        <p>© 2025 SoilSoft Technologies Pvt Ltd. All Rights Reserved.</p>
         <p className="text-center sm:text-end">
           Developed with ❤️ by SS DevTeam
         </p>
