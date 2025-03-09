@@ -6,6 +6,10 @@ import AiOverlayForm from "./AiOverlayForm ";
 import QAOverlayForm from "./QAOverlayForm";
 import StaffingOverlayForm from "./StaffingOverlayForm ";
 import web from "../../public/assets/web.png";
+import mobileapp from "../../public/assets/mobileapp.png";
+import staffing from "../../public/assets/Staffing.png";
+import qa from "../../public/assets/qa.png";
+import ai from "../../public/assets/ai.png";
 
 const Hero = () => {
   return (
@@ -47,10 +51,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="bg-[#e6f5f0] p-6 mb-4 rounded-lg shadow-lg hover:shadow-2xl transition text-center items-center">
-            <img
-              src="public/assets/mobileapp.png"
-              className="w-45 h-25 mx-auto my-4"
-            />
+            <img src={mobileapp} className="w-45 h-25 mx-auto my-4" />
             <h1 className="text-3xl font-semibold mb-4 p-10 my-10">
               Mobile App{" "}
             </h1>
@@ -65,7 +66,7 @@ const Hero = () => {
           </div>
           <div className="bg-[#e6f5f0] p-6 mb-4 rounded-lg shadow-lg hover:shadow-2xl transition text-center ">
             <img
-              src="public/assets/Staffing.png"
+              src={staffing}
               alt="Web Development"
               className="w-45 h-21 mx-auto"
             />
@@ -86,7 +87,7 @@ const Hero = () => {
           <div className="grid md:grid-cols-2 gap-20">
             <div className="bg-[#e6f5f0] p-6 mb-4 rounded-lg shadow-lg hover:shadow-2xl transition text-center ">
               <img
-                src="public/assets/qa.png"
+                src={qa}
                 alt="Web Development"
                 className="w-45 h-21 mx-auto"
               />
@@ -103,10 +104,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="bg-[#e6f5f0] p-6 mb-4 rounded-lg shadow-lg hover:shadow-2xl transition text-center ">
-              <img
-                src="public/assets/ai.png"
-                className="w-90 h-50 mx-auto my-5 "
-              />
+              <img src={ai} className="w-90 h-50 mx-auto my-5 " />
               <h1 className="text-3xl font-semibold mb-4 p-10 my-4">
                 AI Agents
               </h1>
@@ -115,7 +113,7 @@ const Hero = () => {
                 intelligent solutions.
               </p>
               {/* Contact Us Button */}
-              <div className="mt-10 my-">
+              <div className="mt-10 my-2">
                 <AiOverlayForm />
               </div>
             </div>
