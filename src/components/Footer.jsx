@@ -1,5 +1,5 @@
-import React from 'react';
-import SSLogo from '../assets/SSLogo.webp';
+import React from "react";
+import SSLogo from "../../public/assets/SSLogo.webp";
 import {
   FaFacebookF,
   FaDribbble,
@@ -7,7 +7,7 @@ import {
   FaInstagram,
   FaWhatsapp,
   FaBehance,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -27,15 +27,19 @@ const Footer = () => {
           </h3>
           <div className="flex gap-4 py-4">
             <div className="p-4 bg-[#E9F8F3] rounded-xl">
-              <a href='https://www.facebook.com/people/Soil-Soft-Technologies/61553683384013/'><FaFacebookF size={25} style={{ color: '#4DC39E' }} /></a>
-              
+              <a href="https://www.facebook.com/people/Soil-Soft-Technologies/61553683384013/">
+                <FaFacebookF size={25} style={{ color: "#4DC39E" }} />
+              </a>
             </div>
             <div className="p-4 bg-[#E9F8F3] rounded-xl">
-              <a href='https://www.linkedin.com/company/soilsofttechnologies/posts/?feedView=all'><FaLinkedinIn size={25} style={{ color: '#4DC39E' }} /></a>
+              <a href="https://www.linkedin.com/company/soilsofttechnologies/posts/?feedView=all">
+                <FaLinkedinIn size={25} style={{ color: "#4DC39E" }} />
+              </a>
             </div>
             <div className="p-4 bg-[#E9F8F3] rounded-xl">
-              <a href='https://api.whatsapp.com/send?phone=917989979264'><FaWhatsapp size={25} style={{ color: '#4DC39E' }} /></a>
-              
+              <a href="https://api.whatsapp.com/send?phone=917989979264">
+                <FaWhatsapp size={25} style={{ color: "#4DC39E" }} />
+              </a>
             </div>
           </div>
         </div>

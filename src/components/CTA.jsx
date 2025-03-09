@@ -1,24 +1,24 @@
-import { useState } from 'react';
-import React from 'react';
-import { cta } from '../assets';
+import { useState } from "react";
+import React from "react";
+import { cta } from "../../public/assets";
 
 const CTA = () => {
-  const [email, setEmail] = useState('');
-  const [contact, setContact] = useState('');
+  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Validate form data
     if (!email || !contact) {
-      setErrorMessage('Please fill in all fields');
+      setErrorMessage("Please fill in all fields");
       return;
     }
 
     setIsLoading(true);
-    setErrorMessage('');
+    setErrorMessage("");
 
     // Create the body for the POST request
     const formData = { email, contact };
@@ -26,11 +26,11 @@ const CTA = () => {
     try {
       // Make the POST request with the form data
       const response = await fetch(
-        'https://sendemail-pearl.vercel.app/sendemail',
+        "https://sendemail-pearl.vercel.app/sendemail",
         {
-          method: 'POST', // The HTTP method
+          method: "POST", // The HTTP method
           headers: {
-            'Content-Type': 'application/json', // The content type is JSON
+            "Content-Type": "application/json", // The content type is JSON
           },
           body: JSON.stringify(formData), // Convert the formData object to a JSON string
         }
@@ -38,16 +38,16 @@ const CTA = () => {
 
       if (response.ok) {
         // If the response is OK (status 200-299)
-        alert('Request submitted successfully');
+        alert("Request submitted successfully");
         // Reset form fields
-        setEmail('');
-        setContact('');
+        setEmail("");
+        setContact("");
       } else {
-        setErrorMessage('Failed to submit request. Please try again later.');
+        setErrorMessage("Failed to submit request. Please try again later.");
       }
     } catch (error) {
       // Catch any errors during the request
-      setErrorMessage('Error: Unable to send request. Please try again.');
+      setErrorMessage("Error: Unable to send request. Please try again.");
     } finally {
       // Set isLoading back to false after the request completes
       setIsLoading(false);
@@ -85,7 +85,7 @@ const CTA = () => {
                 className="my-4 px-8 py-3 rounded-md bg-[#ffffffd5] text-[#16734f] text-lg font-bold w-full"
                 disabled={isLoading}
               >
-                {isLoading ? 'Submitting...' : 'Contact Demo'}
+                {isLoading ? "Submitting..." : "Contact Demo"}
               </button>
             </div>
           </form>
