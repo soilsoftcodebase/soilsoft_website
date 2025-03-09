@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { hamburgerMenu, close, logo} from '../assets'
 import SSlogo2 from '/public/assets2/SSLogo2.png';
-import { HashLink as Link } from 'react-router-hash-link';
+
 
 
 const Navbar = () => {
@@ -20,10 +20,13 @@ const Navbar = () => {
             <nav>
 
             <ul className="flex gap-6">
+        
         <li><a href="#hero" className="hover:text-[#20B486]">Home</a></li>
         <li><a href="#services" className="hover:text-[#20B486]">Services</a></li>
+              <li><a href="#" className="hover:text-[#20B486]">Portfolio</a></li>
         <li><a href="#products" className="hover:text-[#20B486]">Products</a></li>
         <li><a href="#cta" className="hover:text-[#20B486]">Contact</a></li>
+
   
       </ul>
             {/* <ul className="flex gap-6">
@@ -47,6 +50,7 @@ const Navbar = () => {
             <ul>
             <li><a href="#hero" className="hover:text-[#20B486]">Home</a></li>
             <li><a href="#services" className="hover:text-[#20B486]">Services</a></li>
+            <li><a href="#" className="hover:text-[#20B486]">Portfolio</a></li>
             <li><a href="#products" className="hover:text-[#20B486]">Products</a></li>
             <li><a href="#cta" className="hover:text-[#20B486]">Contact</a></li>
 
