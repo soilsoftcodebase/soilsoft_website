@@ -6,10 +6,6 @@ import AiOverlayForm from "./AiOverlayForm ";
 import QAOverlayForm from "./QAOverlayForm";
 import StaffingOverlayForm from "./StaffingOverlayForm ";
 import web from "../../public/assets/web.png";
-import mobileapp from "../../public/assets/mobileapp.png";
-import staffing from "../../public/assets/Staffing.png";
-import qa from "../../public/assets/qa.png";
-import ai from "../../public/assets/ai.png";
 
 const Hero = () => {
   return (
@@ -18,7 +14,7 @@ const Hero = () => {
       <div className="w-full py-8 md:py-16 flex items-center justify-center bg-white">
         <div className="max-w-[90%] md:max-w-[1180px] text-center px-4">
           <div className="flex flex-col items-center gap-4">
-            <h1 className="leading-[40px] md:leading-[60px] text-5xl md:text-5xl font-thin">
+            <h1 className="leading-[30px] md:leading-[60px] text-4xl md:text-5xl font-thin">
               <span className="text-[#038b46] animate-bounce">Innovate</span>{" "}
               <span className="text-[#5841b2] animate-bounce">Boldly, </span>{" "}
               <span className="text-[#038b46] animate-bounce">Implement </span>
@@ -26,7 +22,7 @@ const Hero = () => {
                 Brilliantly!{" "}
               </span>
             </h1>
-            <p className="text-10lg md:text-lg text-gray-600 px-5 md:px-0">
+            <p className="text-lg md:text-lg text-gray-600 px-5 md:px-0">
               Empowering Smarter Solutions with Precision and Automation.
             </p>
           </div>
@@ -51,7 +47,10 @@ const Hero = () => {
             </div>
           </div>
           <div className="bg-[#e6f5f0] p-6 mb-4 rounded-lg shadow-lg hover:shadow-2xl transition text-center items-center">
-            <img src={mobileapp} className="w-45 h-25 mx-auto my-4" />
+            <img
+              src="public/assets/mobileapp.png"
+              className="w-45 h-25 mx-auto my-4"
+            />
             <h1 className="text-3xl font-semibold mb-4 p-10 my-10">
               Mobile App{" "}
             </h1>
@@ -66,7 +65,7 @@ const Hero = () => {
           </div>
           <div className="bg-[#e6f5f0] p-6 mb-4 rounded-lg shadow-lg hover:shadow-2xl transition text-center ">
             <img
-              src={staffing}
+              src="public/assets/Staffing.png"
               alt="Web Development"
               className="w-45 h-21 mx-auto"
             />
@@ -87,7 +86,7 @@ const Hero = () => {
           <div className="grid md:grid-cols-2 gap-20">
             <div className="bg-[#e6f5f0] p-6 mb-4 rounded-lg shadow-lg hover:shadow-2xl transition text-center ">
               <img
-                src={qa}
+                src="public/assets/qa.png"
                 alt="Web Development"
                 className="w-45 h-21 mx-auto"
               />
@@ -104,7 +103,10 @@ const Hero = () => {
               </div>
             </div>
             <div className="bg-[#e6f5f0] p-6 mb-4 rounded-lg shadow-lg hover:shadow-2xl transition text-center ">
-              <img src={ai} className="w-90 h-50 mx-auto my-5 " />
+              <img
+                src="public/assets/ai.png"
+                className="w-90 h-50 mx-auto my-5 "
+              />
               <h1 className="text-3xl font-semibold mb-4 p-10 my-4">
                 AI Agents
               </h1>
@@ -113,7 +115,7 @@ const Hero = () => {
                 intelligent solutions.
               </p>
               {/* Contact Us Button */}
-              <div className="mt-10 my-2">
+              <div className="mt-10 my-">
                 <AiOverlayForm />
               </div>
             </div>
