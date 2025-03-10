@@ -113,7 +113,7 @@ const Hero = () => {
                 intelligent solutions.
               </p>
               {/* Contact Us Button */}
-              <div className="mt-10 my-2">
+              <div className="mt-10 ">
                 <AiOverlayForm />
               </div>
             </div>
