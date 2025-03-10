@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { hamburgerMenu, close, logo } from "../../public/assets";
 import SSlogo2 from "/public/assets2/SSLogo2.png";
-import bgimg from "../../public/assets/bgimg.jpg";
+import Bgimg from "../../public/assets/Bgimg.jpg";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="relative w-full h-[80px] mt-3 mb-3">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${bgimg})` }}
+        style={{ backgroundImage: `url(${Bgimg})` }}
       >
         <div className="absolute inset-0 bg-white opacity-75"></div>
       </div>
